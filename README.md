@@ -1,12 +1,167 @@
-# React + Vite
+Customer Segmentation Using K-Means Clustering
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This project focuses on segmenting customers based on their purchasing behavior using K-Means Clustering, one of the most popular unsupervised machine learning algorithms.
+The entire workflow is implemented in Google Colab, making it easy to run, modify, and experiment with.
 
-Currently, two official plugins are available:
+📁 Project Overview
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Customer segmentation helps businesses understand different customer groups so they can:
 
-## Expanding the ESLint configuration
+Improve targeted marketing
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+Personalize user experience
+
+Increase sales and retention
+
+Identify high-value customer clusters
+
+This project uses Mall Customer Dataset, applies data preprocessing, performs clustering using K-Means, and visualizes the identified customer groups.
+
+🚀 Key Features
+✔ 1. Data Preprocessing
+
+Handling missing values
+
+Selecting relevant features
+
+Normalization / standardization
+
+✔ 2. Exploratory Data Analysis (EDA)
+
+Distribution plots
+
+Pairplots
+
+Correlation heatmaps
+
+Insights from spending & income patterns
+
+✔ 3. K-Means Clustering
+
+Selecting optimal number of clusters using Elbow Method
+
+Training K-Means model
+
+Assigning customers to clusters
+
+✔ 4. Visualization
+
+2D cluster visualization
+
+Distinct color mapping for clusters
+
+Graphs showing income vs spending score
+
+✔ 5. Google Colab Integration
+
+Fully executed in Colab
+
+Easy to modify & run
+
+No local setup required
+
+🛠️ Technologies Used
+Category	Tools
+Programming	Python
+Libraries	NumPy, Pandas, Matplotlib, Seaborn, Scikit-Learn
+ML Algorithm	K-Means Clustering
+Platform	Google Colab
+Visualization	Matplotlib, Seaborn
+📊 Dataset
+
+Mall Customer Segmentation Dataset
+Columns include:
+
+CustomerID
+
+Age
+
+Gender
+
+Annual Income
+
+Spending Score
+
+You can upload your own dataset or use the one included in the notebook.
+
+🔍 Steps in the Notebook
+
+Import libraries
+
+Load dataset from CSV
+
+Handle missing values
+
+Perform EDA
+
+Normalize/scale features
+
+Use elbow method to find optimal K
+
+Apply K-Means
+
+Visualize clusters
+
+Interpret the segments
+
+🧪 Results
+
+The model identifies distinct customer segments, such as:
+
+High income / high spending
+
+High income / low spending
+
+Low income / high spending
+
+Low income / low spending
+
+These segments help in targeted marketing and business strategy.
+
+🧾 How to Run this Project
+Option 1: Run on Google Colab
+
+Open the .ipynb file in GitHub
+
+Click “Open in Colab”
+
+Run all cells
+
+Option 2: Run Locally
+
+Install dependencies:
+
+pip install numpy pandas matplotlib seaborn scikit-learn
+
+
+Run the notebook using Jupyter:
+
+jupyter notebook
+
+🗂️ Folder Structure
+├── Customer-Segmentation-KMeans.ipynb
+├── dataset/
+│   └── Mall_Customers.csv
+├── README.md
+
+📈 Visual Outputs
+
+The notebook includes:
+
+Elbow method plot
+
+Cluster scatter plots
+
+Spending vs income graphs
+
+(Screenshots can be added here in GitHub)
+
+⭐ Future Enhancements
+
+Implement DBSCAN for density-based clustering
+
+Add PCA for dimensionality reduction
+
+Deploy model as a web app using Flask/Streamlit
+
+Perform 3D cluster visualization
